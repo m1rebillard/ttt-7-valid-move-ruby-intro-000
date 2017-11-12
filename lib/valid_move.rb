@@ -5,7 +5,7 @@ def valid_move?(board, position)
   end
   if position_taken?(board, position) == false
     return true
-  end  
+  end
   return false
 end
 
@@ -15,7 +15,7 @@ def position_taken?(board, position)
   if (board[position] == "X") || (board[position] == "O")
     return true
   end
-  
+
   if (board[position] == " ") || (board[position] == "") || (board[position] == nil)
     return false
   end
